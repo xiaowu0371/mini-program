@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class='content subject'>
+  <view class='h1'>课程列表</view>
+  <view class='subject-items' wx:for="{{list}}">
+    <image src='{{item.img}}'></image>
+    <view>
+      <text class='h2'>{{item.title}}</text>
+      <text class='h3 col999'>{{item.intr}}</text>
+    </view>
+  </view>
+
+</view>

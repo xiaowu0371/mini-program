@@ -1,0 +1,119 @@
+<!--index.wxml-->
+<view class='content'>
+  <swiper class='banner' autoplay="{{autoplay}}" interval='{{interval}}' circular='{{circular}}' indicator-dots="{{indicatorDots}}" indicator-active-color='#fff'>
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image class='banner' src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='main'>
+
+    <view class='info'>
+      <view class="h2 info-title" style="background:url('http://static.baizhiedu.com/baizhiedu2019/pc/index-new/images/wx-arrow.png') no-repeat 80rpx center">{{info.infoTitle}}
+      </view>
+      <view class='info-list'>
+        <swiper vertical="{{vertical}}" autoplay="{{autoplay}}" interval='{{interval}}' circular='{{circular}}'>
+          <block wx:for="{{info.infoHot}}" wx:key="{{index}}">
+            <swiper-item>
+              <text class='h4 col999' bindtap='goArticle'> {{item}} </text>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+
+    </view>
+    <view class='news'>
+      <view class='title'>
+        <text class='h1'>热文推荐</text>
+        <text class="h3 col999">查看全部</text>
+      </view>
+      <view wx:for="{{newsList}}" wx:key="{{index}}">
+        <text class='h3 col333 news-font' style="background:url('http://static.baizhiedu.com/baizhiedu2019/pc/index-new/images/wx-play.png') no-repeat left center;" bindtap='goArticle'>{{item}}</text>
+      </view>
+    </view>
+    <block>
+      <view class='ad-bar' bindtap='goBuy'>
+        <text class='ad-title'>揭秘<text class='strong'>100+技术专家</text>的实战方法论</text>
+        <text class='ad-intr'>VIP年卡限时拼团 立减￥500</text>
+      </view>
+    </block>
+    <view class='course-hot'>
+      <view class='title'>
+        <text class='h1'>热门课程</text>
+        <text class="h3 col999">更多课程</text>
+      </view>
+      <view class='course-hot-items'>
+        <view wx:for="{{course}}" wx:key="{{index}}" bindtap='goBuy'>
+          <image src='{{item.img}}'></image>
+          <text class='h3 strong'>{{item.title}}</text>
+          <text class='price'>￥{{item.price}}</text>
+        </view>
+      </view>
+
+
+    </view>
+    <view class='teacher'>
+      <view class='title'>
+        <text class='h1 '>资深讲师</text>
+        <text class="h3 col999">更多讲师</text>
+      </view>
+      <view class='teacher-items' wx:for="{{teacher.items}}" wx:key="{{index}}">
+        <view>
+          <text class='h3 col555'>{{item.title}}</text>
+          <text class='h2'>{{item.cont}}</text>
+          <text class='h4 col999'>{{item.intr}}</text>
+        </view>
+        <image src='{{item.img}}'></image>
+      </view>
+      <text class='h3 change-more' style='background:url(http://static.baizhiedu.com/baizhiedu2019/pc/index-new/images/wx-sx.png) no-repeat 36% center;' bindtap='teacherChange'>换一批</text>
+    </view>
+
+    <view class='review'>
+      <view class='title'>
+        <text class='h1 '>十年回顾</text>
+        <text class="h3 col999">查看全部</text>
+      </view>
+      <view class='review-items'>
+        <view>
+          <image src='images/year.png'></image>
+          <view>
+            <text class='h2'>十年</text>
+            <text class='h3 col999'>从创立到如今</text>
+          </view>
+        </view>
+        <view>
+          <image src='images/lock.png'></image>
+          <view>
+            <text class='h2'>解锁</text>
+            <text class='h3 col999'>it行业解锁</text>
+          </view>
+        </view>
+        <view>
+          <image src='images/dn.png'></image>
+          <view>
+            <text class='h2'>百知档案</text>
+            <text class='h3 col999'>学员成长记录</text>
+          </view>
+        </view>
+        <view>
+          <image src='images/telegram.png'></image>
+          <view>
+            <text class='h2'>翱翔</text>
+            <text class='h3 col999'>共同成长</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='userinfo-wrap' wx:if="{{!hasUserInfo}}">
+  <view class="userinfo">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="border:0px solid red;background-color:orange;width:330rpx;">
+      <view>请点击头像登录</view>
+    </button>
+  </view>
+  <image src="{{userInfo.avatarUrl}}" style="width:200rpx;height:200rpx;" />
+  <text>用户信息为：{{userInfo.nickName}}</text>
+</view>

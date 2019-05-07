@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<image class='banner' src='../../image/banner.jpg'></image>
+<view class='content'>
+  <view class='course-menu'>
+    <view wx:for="{{courseMenu}}">
+      <image src='{{item.img}}'></image>
+      <text class='h3'>{{item.title}}</text>
+    </view>
+  </view>
+  <text class='h1 title'>热门课程试听</text>
+  <view class='hot-video-items' wx:for="{{freeCourse}}">
+    <image src='{{item.img}}'></image>
+    <view>
+      <text class='h2' bindtap='go'>{{item.title}}</text> 
+      <text class='h4 col999'>{{item.direction}}</text>
+      <view class='h4 col999'>
+        <text class='price'>{{item.price}}</text>
+        <text class='number'>{{item.number}}人购买</text>
+      </view>
+    </view>
+  </view>
+
+
+
+</view>

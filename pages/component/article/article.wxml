@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class='article'>
+  <text class='h1'>{{articleTitle}}</text>
+  <view class='article-mes font-1'>
+    <text class='article-author'>百小知</text>
+    <text class='article-copyright'>百知教育</text>
+    <text class='article-time'>4月2日</text>
+  </view>
+  <image class='article-show' src='../../../image/show.gif'></image>
+
+  <view class='artile-cont'>
+    <block>
+      <view class='strong font-1'>百知教育简介</view>
+      <view class='part-1'>
+        <text class='strong font-1'>北京百知教育科技有限公司</text>
+        <text class='font-1'>由中关村软件园支持设立，是中关村软件园官方唯一指定合作伙伴。线下运营近10年后，于2014年正式成立百知教育集团。</text>
+        <image src='../../../image/bz-02.jpg'></image>
+      </view>
+    </block>
+    <block>
+      <view class='part-2'>
+        <text class='strong font-1'>北京百知教育科技有限公司</text>
+        <text class='font-1'>是落实国家软件人才发展战略、促进大学生创新就业，由中关村软件园与中关村人才协会支持设立的互联网+创新型技术人才培训及人力资源服务机构。</text>
+        <image src='../../../image/bz-01.jpg'></image>
+        <text class='font-1'>在建设中关村人才特区背景下，基地秉承着为全国相关高校及企业提供技术创新创业、科技成果转化、商业项目对接、输送高端技术研发人员等IT技术服务的使命，重点打造为互联网+创新型技术服务示范基地。总部基地位于中关村软件园9号楼，拥有3000多平米的实训场地，同时配套有学员餐厅、工程师公寓、多功能报告厅等多种场地设施，为实训学员提供一站式实训服务。</text>
+      </view>
+    </block>
+  </view>
+
+
+
+
+
+</view>

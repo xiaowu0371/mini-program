@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<image src='../../../image/bz-02.jpg'></image>
+<view class='content'>
+  <view class='video-head'>
+    <text class='h2'>9小时搞定微信小程序开发<text class='h3 col999'>{{number}}人购买</text></text>
+    <text class='h4 col999'><text class='video'>视频课程</text>91课时 约600分钟</text>
+  </view>
+  <view class='video-line'></view>
+  <view class='viedo-menu'>
+    <text class='h2 colfd891a video-intr'>课程信息</text>
+    <text class='h2 video-list'>课程目录<text class='colfd891a h3'>试看</text></text>
+    <view class='video-active'><text></text></view>
+    <view class='video-teacher'>
+      <text class='h1 video-title'>课程讲师</text>
+      <view>
+        <image src='../../../image/ss.png'></image>
+        <view>
+          <text class='h3 strong'>孙帅</text>
+          <text class='h3 col999'>从事java相关研发5年以上</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='video-line'></view>
+  <view class='video-intr-cont'>
+    <text class='h1 video-title'>特别放送</text>
+    <text class='col169b7c chapter'>用户故事|刷算法面试题的4种方式</text>
+    <text class='h1 video-title'>课程简介</text>
+    <text class="chapter">算法中的指令描述的是一个计算，当其运行时能从一个初始状态和（可能为空的）初始输入开始，经过一系列有限而清晰定义的状态，最终产生输出并停止于一个终态。</text>
+    <text class='h1 video-title'>课程大纲</text>
+    <text class="chapter">本课程共分8快，具体课程如下：</text>
+    <image src='../../../image/course-java01.png'></image>
+    <image src='../../../image/course-java02.png'></image>
+    <image src='../../../image/course-java03.png'></image>
+    <image src='../../../image/course-java04.png'></image>
+    <image src='../../../image/course-java05.png'></image>
+    <image src='../../../image/course-java06.png'></image>
+  </view>
+ 
+  <view class='foot'>
+    <text class='audition h3'>免费试听</text>
+    <text class='buy h3'>加入学习￥99</text>
+  </view>
+
+
+</view>
+
+
+

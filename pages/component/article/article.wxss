@@ -1,0 +1,31 @@
+/**index.wxss**/
+.article{
+  width:100%;
+  box-sizing: border-box;
+  padding:30rpx 24rpx 0 24rpx;
+  border-top:1px solid rgb(226, 223, 223);
+}
+
+.article-mes{
+  margin-top:20rpx;
+  color:#ddd;
+}
+.article-author{
+  margin-right:15rpx;
+}
+.article-copyright{
+  color:gray;
+  margin-right:15rpx;
+}
+.article-show{
+  display: block;
+  width:640rpx;
+  height:142rpx;
+  margin:30rpx auto;
+}
+.artile-cont image{
+  display: block;
+  width:650rpx;
+  height:500rpx;
+  margin:15rpx auto;
+}

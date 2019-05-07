@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/authorize/authorize",
+    "pages/index/index",
+    "pages/theme/index",
+    "pages/video/index",
+    "pages/user/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "百知it培训",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "selectedColor":"#fd891a",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"image/icon-home.png",
+      "selectedIconPath":"image/icon-active-home.png"
+    },{
+      "pagePath": "pages/video/index",
+      "text": "试听",
+      "iconPath": "image/icon-video.png",
+      "selectedIconPath": "image/icon-active-video.png"
+    },
+    {
+      "pagePath": "pages/theme/index",
+      "text": "课程",
+      "iconPath": "image/icon-menu.png",
+      "selectedIconPath": "image/icon-active-menu.png"
+    },
+    {
+      "pagePath": "pages/user/index",
+      "text": "我的",
+      "iconPath": "image/icon-user.png",
+      "selectedIconPath": "image/icon-active-user.png"
+    }]
+
+  },
+  "sitemapLocation": "sitemap.json"
+}

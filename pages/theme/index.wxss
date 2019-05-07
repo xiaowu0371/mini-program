@@ -1,0 +1,26 @@
+/**index.wxss**/
+.subject .h1{
+  margin-bottom:40rpx;
+}
+.subject-items{
+  display:flex;
+  align-items:center;
+  padding:30rpx 16rpx;
+  background: #ffffff;
+  margin-top:4rpx;
+  border-bottom:4rpx solid #f1f1f1;
+}
+.subject-items .h2{
+  font-weight: normal;
+}
+.subject-items image{
+  width:96rpx;
+  height: 96rpx;
+  margin-right:20rpx;
+}
+.subject-items view{
+  flex:1;
+}
+.subject-items view text{
+  display: block;
+}

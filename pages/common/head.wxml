@@ -1,0 +1,6 @@
+<!--header.wxml-->
+<template name="head">
+  <view class='menu'>
+    <navigator url='#' wx:for="{{menuArr}}" wx:key="{{index}}">{{item}}</navigator>
+  </view>
+</template>

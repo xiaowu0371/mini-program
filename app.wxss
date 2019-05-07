@@ -1,0 +1,97 @@
+/**app.wxss**/
+/**globale css**/
+page{
+  background-color: #ffffff;
+  height:100%;
+  font-size:32rpx;
+  color:#333;
+}
+view{
+  box-sizing: border-box;
+}
+checkbox radio{
+  margin-right:10rpx;
+}
+form{
+  width:100%;
+}
+
+/* lib */
+/* font */
+.h1{
+  font-size:46rpx;
+  font-weight: bold;
+  color:#333;
+}
+.title{
+  position: relative;
+  font-size:46rpx;
+  font-weight: bold;
+  color:#333;
+  text-indent: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:50rpx;
+}
+.title::after{
+  position: absolute;
+  left:0;
+  top:8rpx;
+  content:"";
+  width:8rpx;
+  height:50rpx;
+  background:#ffd1a5;
+  border-radius: 4rpx;
+}
+.h2{
+  font-size:36rpx;
+  font-weight: bold;
+  color:#333;
+}
+
+.h3{
+  font-size:30rpx;
+}
+.h4{
+  font-size:28rpx;
+}
+.strong{
+  font-weight: bold;
+}
+
+/*文字颜色值	*/
+.col333{color:#333;}
+.col999{color:#999;}
+.col999{color:#555;}
+.colddd{color:#ddd;}
+.colffd1a5{color:#ffd1a5;}
+.colfd891a{color:#fd891a;}
+.col169b7c{color:#169b7c;}
+
+.content{
+  width: 92%;
+  margin:0 auto;
+  box-sizing: border-box;
+} 
+/*布局*/
+.one{
+  width:92%;
+  margin:0 auto;
+  overflow: hidden;
+}
+/** header.wxss **/
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:75rpx;
+  background: #efeff0;
+}
+.menu navigator{
+  flex:1;
+  color:black;
+  text-align: center;
+}
+

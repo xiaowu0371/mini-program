@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view>
+  <image class='banner' src='../../image/bz-02.jpg'></image>
+  <view class='header content'>
+    <image src='../../image/ss.png'></image>
+    <view>
+      <text class='h2'>小五</text>
+      <text class='h3'>150****5397</text>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class=''>
+    <view class='list content'>
+      <image src='../../image/zh.png'></image>
+      <text class='h2'>账户</text>
+      <text class='h3 col999'>0.00</text>
+    </view>
+    <view class='list content list-border'>
+      <image src='../../image/qd.png'></image>
+      <text class='h2'>已购</text>
+      <text class='h3 col999'>3</text>
+    </view>
+    <view class='line'></view>
+    <view class='list content'>
+      <image src='../../image/sq.png'></image>
+      <text class='h2'>我的社群</text>
+      <text class='h3 col999'></text>
+    </view>
+    <view class='list content list-border'>
+      <image src='../../image/mryk.png'></image>
+      <text class='h2'>我的每日一课</text>
+      <text class='h3 col999'></text>
+    </view>
+    <view class='line'></view>
+    <view class='list content'>
+      <image src='../../image/yhq.png'></image>
+      <text class='h2'>礼券</text>
+      <text class='h3 col999'></text>
+    </view>
+    <view class='list content'>
+      <image src='../../image/lw.png'></image>
+      <text class='h2'>分享有奖</text>
+      <text class='h3 col999'></text>
+    </view>
+    <view class='list content list-border'>
+      <image src='../../image/fx.png'></image>
+      <text class='h2'>邀请好友</text>
+      <text class='h3 col999'></text>
+    </view>
+    <view class='line'></view>
+    <view class='list content'>
+      <image src='../../image/help.png'></image>
+      <text class='h2'>帮助与反馈</text>
+      <text class='h3 col999'></text>
+    </view>
+    <view class='list content'>
+      <image src='../../image/set.png'></image>
+      <text class='h2'>设置</text>
+      <text class='h3 col999'></text>
+    </view>
+  </view>
+
+
+
+</view>

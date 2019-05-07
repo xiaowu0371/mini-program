@@ -1,0 +1,59 @@
+/**index.wxss**/
+.banner{
+  width:100%;
+  height:260rpx;
+}
+.course-menu{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.course-menu view{
+  width:25%;
+  margin-top:40rpx;
+}
+.course-menu image{
+  display: block;
+  width:96rpx;
+  height:96rpx;
+  margin:0 auto;
+}
+.course-menu text{
+  display: block;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.hot-course{
+  padding-left:30rpx;
+}
+.hot-video-items {
+  display: flex;
+  padding:30rpx 0;
+  align-items: center;
+}
+.hot-video-items image{
+  width:200rpx;
+  height:200rpx;
+  margin-right:30rpx;
+}
+.hot-video-items view{
+  flex: 1;
+}
+.hot-video-items .h4{
+  display: flex;
+  justify-content: space-between;
+}
+.hot-video-items .h4 text{
+  display: block;
+}
+.hot-video-items .price{
+  width:160rpx;
+  color:#fd891a;
+}
+.hot-video-items .number{
+  flex: 1;
+  text-align: right;
+}
+
+
