@@ -9,11 +9,11 @@
     </view>
   </view>
   <view class='line'></view>
-  <view class=''>
-    <view class='list content'>
+  <view class=''> 
+    <view class='list content' bindtap='goAccount'>
       <image src='../../image/zh.png'></image>
       <text class='h2'>账户</text>
-      <text class='h3 col999'>0.00</text>
+      <text class='h3 col999'>{{money}}</text>
     </view>
     <view class='list content list-border'>
       <image src='../../image/qd.png'></image>

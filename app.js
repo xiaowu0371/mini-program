@@ -36,6 +36,7 @@ App({
   globalData: {
     userInfo: null,
     menuArr: ['全部', '教程', '资讯', '面试', '吐槽', '咨询'],
-    mymes:'test'
+    mymes:'test',
+    money:99.98
   }
 })

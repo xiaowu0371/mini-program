@@ -1,0 +1,57 @@
+<!--pages/account.wxml-->
+<block>
+  <text class='h2 account-title'>账户</text>
+  <view class='account-head'>
+    <text class='h1 '>￥{{money}}</text>
+    <text class='h3 col999 money'>当前账户余额</text>
+  </view>
+  <view class='content'>
+    <block>
+      <view class='ad-bar'>
+        <text class='ad-title'>揭秘<text class='strong'>100+技术专家</text>的实战方法论</text>
+        <text class='ad-intr'>VIP年卡限时拼团 立减￥500</text>
+      </view>
+    </block>
+    <view class='pay'>
+      <view>
+        <text class="h2">充值</text>
+        <text class="h4">请选择你要充值的金额</text>
+      </view>
+
+
+      <view class='account-items'>
+        <view wx:for="{{price}}" wx:key="{{index}}" bindtap='userSelect'>
+          <block wx:if="{{index==clickID}}">
+            <view class='active'>
+              <text class='h2'>￥{{item.price}}</text>
+              <text class='h3 col999'>仅需：{{item.pay}}</text>
+            </view>
+          </block>
+          <block wx:else>
+            <view class=''>
+              <text class='h2'>￥{{item.price}}</text>
+              <text class='h3 col999'>仅需：{{item.pay}}</text>
+            </view>
+          </block>
+        </view>
+      </view>
+
+
+      <button plain='true'>确认充值</button>
+    </view>
+    <view class='pay-intr'>
+      <text class='h2'>充值说明</text>
+      <text class='h4 col999'>1.因苹果政策，充值金额不支持跨平台使用；</text>
+      <text class='h4 col999'>2.充值金额不过期，可以赠送不支持退款，提现；</text>
+      <text class='h4 col999'>3.充值如遇到问题，请联系客服，我们会在第一时间解决您的问题；</text>
+    </view>
+
+
+
+
+  </view>
+
+
+
+
+</block>

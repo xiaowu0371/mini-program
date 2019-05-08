@@ -1,0 +1,83 @@
+/* pages/account.wxss */
+.account-title{
+  display: block;
+  text-align: center;
+}
+.account-head{
+  padding:60rpx 0 40rpx 0;
+  border-bottom: 2rpx solid #ddd;
+}
+.account-head text{
+  display: block;
+  text-align: center;
+  line-height: 50rpx;
+}
+.ad-bar{
+  padding:40rpx 30rpx;
+  background:#efe2d9;
+  border-radius:20rpx;
+  margin:40rpx auto;
+}
+.ad-title{
+  display: block;
+  font-size:30rpx;
+  color:#b48460;
+}
+.ad-intr{
+
+  display:inline-block;
+  font-size:26rpx;
+  color:#dd5315;
+  border:1px solid #dd5315;
+  border-radius: 20rpx;
+  padding:5rpx 10rpx;
+  margin-top:15rpx;
+}
+
+.account-items{
+  margin-top:30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.account-items view{
+  width:210rpx;
+  background: #e5e5ee;
+  border-radius: 20rpx;
+  text-align: center;
+  padding:30rpx 0;
+  margin-bottom:30rpx;
+}
+.account-items view text{
+  display: block;
+}
+.account-items view h2{
+  text-decoration: line-through;
+}
+.account-items view.active{
+  background: #fc8a1a;
+}
+.account-items view.active text{
+  color:#fff;
+}
+
+.pay h2{
+  padding-right: 30rpx;
+}
+.pay button{
+  margin:70rpx 0;
+  background: #fc8a1a;
+  color:#fff;
+  border:none;
+}
+.pay-intr text{
+  display: block;
+}
+.pay-intr .h2{
+  padding:20rpx 0;
+}
+.pay-intr .h4{
+  line-height: 50rpx;
+  text-indent: -20rpx;
+  padding-left:40rpx;
+}
