@@ -1,72 +1,49 @@
 // pages/account.js
-const app=getApp()
+const app=getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    money:app.globalData.money,
-    userSelect:false,
-    clickID:'4',
-    price:[
+    cartCounter: app.globalData.cartCounter,
+    purchased: [
       {
-        "price":10,
-        "pay":9.5
-      }, 
-      {
-        "price": 20,
-        "pay": 19
-      }, 
-      {
-        "price": 30,
-        "pay": 29
+        "title": "python全栈开发从入门到精通",
+        "direction": "共20课时，300分钟",
+        "img": "http://www.baizhiedu.com/wp-content/uploads/2019/01/20190102174709_42941.png"
       },
       {
-        "price": 40,
-        "pay": 38
-      },
-      {
-        "price": 50,
-        "pay": 46
-      },
-      {
-        "price": 100,
-        "pay": 90
-      },
-      {
-        "price": 200,
-        "pay": 180
-      },
-      {
-        "price": 300,
-        "pay": 270
-      }, {
-        "price": 500,
-        "pay": 400
+        "title": "java进阶，企业级应用教程",
+        "direction": "共91课时，600分钟",
+        "img": "http://static.baizhiedu.com/baizhiedu-ztnew/pc2017/inform/img/jsyf0001.jpg"
       }
     ]
   },
+  go: function () {
+    wx.navigateTo({
+      url: '../component/buy/index',
+    })
 
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+   
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.setData({
+      cartCounter: this.data.purchased.length
+    })
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    app.globalData.cartCounter = this.data.purchased.length;
+    console.log(app.globalData.cartCounter)
   },
 
   /**

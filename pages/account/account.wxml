@@ -20,18 +20,10 @@
 
 
       <view class='account-items'>
-        <view wx:for="{{price}}" wx:key="{{index}}" bindtap='userSelect'>
-          <block wx:if="{{index==clickID}}">
-            <view class='active'>
+        <view class="{{clickID == index ? 'active':''}}" wx:for="{{price}}" wx:key="{{index}}" bindtap='userSelect' id="{{index}}">
+          <block>
               <text class='h2'>￥{{item.price}}</text>
               <text class='h3 col999'>仅需：{{item.pay}}</text>
-            </view>
-          </block>
-          <block wx:else>
-            <view class=''>
-              <text class='h2'>￥{{item.price}}</text>
-              <text class='h3 col999'>仅需：{{item.pay}}</text>
-            </view>
           </block>
         </view>
       </view>

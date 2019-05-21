@@ -108,7 +108,7 @@
   </view>
 </view>
 
-<view class='userinfo-wrap' wx:if="{{!hasUserInfo}}">
+<view class='userinfo-wrap' >
   <view class="userinfo">
     <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="border:0px solid red;background-color:orange;width:330rpx;">
       <view>请点击头像登录</view>

@@ -37,10 +37,15 @@
     <image src='../../../image/course-java06.png'></image>
   </view>
  
-  <view class='foot'>
-    <text class='audition h3'>免费试听</text>
-    <text class='buy h3'>加入学习￥99</text>
-  </view>
+  <block wx:if="{{paided}}">
+    <view class='foot' >
+      <text class='audition h3'>免费试听</text>
+      <text class='buy h3'>加入学习￥99</text>
+    </view>
+  </block>
+  <block wx:else>
+      <text class='foot'>已经购买过了</text>
+  </block>
 
 
 </view>

@@ -72,8 +72,7 @@ Page({
     if (e.detail.userInfo) {
       app.globalData.userInfo = e.detail.userInfo
       this.setData({
-        userInfo: e.detail.userInfo,
-        hasUserInfo: true
+        userInfo: e.detail.userInfo
       })
     } else {
       this.openSetting();
@@ -169,25 +168,7 @@ Page({
     }
   },
 
-  //跳转设置页面授权
-  openSetting: function () {
-    var that = this
-    if (wx.openSetting) {
-      wx.openSetting({
-        success: function (res) {
-          console.log(9);
-          //尝试再次登录
-          that.login()
-        }
-      })
-    } else {
-      console.log(10);
-      wx.showModal({
-        title: '授权提示',
-        content: '小程序需要您的微信授权才能使用哦~ 错过授权页面的处理方法：删除小程序->重新搜索进入->点击授权按钮'
-      })
-    }
-  },
+
   /**时间处理函数**/
   goArticle:function(){
     wx.navigateTo({

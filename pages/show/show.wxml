@@ -1,0 +1,8 @@
+<!--show.wxml-->
+<view class='content show'>
+  <view class='h1'>邀请好友<text>赢礼券</text></view>
+  <view class='h3'>成功要求好友注册，你可以获得<text>{{commission}}元</text>礼券</view>
+  <view class='h3'>好友可得<text>{{coupon}}元</text>新人礼包</view>
+  <image src='../../image/show.jpg'></image>
+  <button open-type='share'>一键邀请</button>
+</view>

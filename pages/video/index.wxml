@@ -8,7 +8,7 @@
     </view>
   </view>
   <text class='h1 title'>热门课程试听</text>
-  <view class='hot-video-items' wx:for="{{freeCourse}}">
+  <view class='hot-video-items' wx:for="{{freeCourse}}" wx:key="{{index}}">
     <image src='{{item.img}}'></image>
     <view>
       <text class='h2' bindtap='go'>{{item.title}}</text> 

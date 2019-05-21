@@ -1,0 +1,29 @@
+<!--pages/购物车-->
+
+<view class='content'>
+  <text class='h2 cart-title'>已购买：{{cartCounter}}</text>
+  <block>
+    <view class='ad-bar'>
+      <text class='ad-title'>揭秘<text class='strong'>100+技术专家</text>的实战方法论</text>
+      <text class='ad-intr'>VIP年卡限时拼团 立减￥500</text>
+    </view>
+  </block>
+
+
+  <view class='purchased-items' wx:for="{{purchased}}" wx:key="{{index}}">
+    <image src='{{item.img}}'></image>
+    <view>
+      <text class='h2' >{{item.title}}</text> 
+      <view class='h4'>
+        <text class='col999'>{{item.direction}}</text>
+        <text class='go' bindtap='go'>去学习</text>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+
+</view>

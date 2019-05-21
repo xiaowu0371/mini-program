@@ -37,6 +37,10 @@ App({
     userInfo: null,
     menuArr: ['全部', '教程', '资讯', '面试', '吐槽', '咨询'],
     mymes:'test',
-    money:99.98
+    money:99.98,
+    cartCounter:0
+  },
+  onReady: function () {
+    
   }
 })

@@ -1,0 +1,61 @@
+/* pages/account.wxss */
+.cart-title{
+  display: block;
+  text-align: left;
+}
+
+.ad-bar{
+  position: fixed;
+  bottom:0;
+  width:92%;
+  padding:40rpx 30rpx;
+  background:#efe2d9;
+  border-radius:20rpx;
+  margin:40rpx auto;
+}
+.ad-title{
+  display: block;
+  font-size:30rpx;
+  color:#b48460;
+}
+.ad-intr{
+  display:inline-block;
+  font-size:26rpx;
+  color:#dd5315;
+  border:1px solid #dd5315;
+  border-radius: 20rpx;
+  padding:5rpx 10rpx;
+  margin-top:15rpx;
+}
+
+.purchased-items {
+  display: flex;
+  padding:30rpx 0;
+  align-items: center;
+}
+.purchased-items image{
+  width:160rpx;
+  height:160rpx;
+  margin-right:30rpx;
+}
+.purchased-items view{
+  flex: 1;
+}
+.purchased-items .h4{
+  margin-top:30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.go{
+  text-align: center;
+  padding:6rpx 20rpx;
+  border:2rpx solid #fc8a1a;
+  color:#fc8a1a;
+  border-radius:20rpx;
+}
+
+
+
+
+
