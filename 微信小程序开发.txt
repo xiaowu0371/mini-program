@@ -1,0 +1,192 @@
+文件结构：数据分离模式
+html---wxml
+css---wxss
+js---js
+
+page({
+    data:{
+	message:''
+    },
+    //事件处理方法
+    add:function(){},
+    clickChange(){}
+
+
+})
+
+pages文件夹－放的是所有的页面文件。
+utils文件夹－放的是一些js工具集。
+app.js－启动入口文件。
+app.wxss－全局样式表文件。
+app.json－全局配置文件。
+
+
+
+语法标准：
+(1)标签：
+<view></view> 
+<text></text>
+<image src=''></image>
+<navigation></navigation>
+<icon></icon>
+<input/>
+<checkbox/>
+<radio/>
+<navigator url="#" ></navigator>
+备注：也可以加触发函数，触发跳转，wx.navigationTo({ url:""})
+
+
+<button></button>
+<block></block>：包装元素，不做渲染；
+
+
+(2)语法：
+简单数据绑定{{}}，标签属性变量绑定id="item-{{id}}"
+checkbox="{{ false }}"
+
+wx:if={{}}  wx:elif={{}}  wx:else={{}};
+
+wx:for={{arr}};  {{item}}
+wx:for-item可以指定数组当前元素的变量名 
+wx:for-index可以指定数组当前下标的变量名
+
+运算
+{{ a+b }}+{{ c }}+d
+字符串运算：{{“heoll”+name}}
+路径运算：{{object.key}} {{array[0]}}
+
+
+bindtap=""    绑定点击事件
+
+样式引入：@import "common.wxss";
+
+
+
+
+<view wx:for="{{arr}}" wx:for-index="idx" wx:for-item="itemName">
+    {{idx}}: {{itemName}}
+  </view>
+
+  <block wx:for="{{[1,2,3,4]}}">
+    <view>{{index}}:</view>
+    <view>{{item}}</view>
+  </block>
+
+  <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;">
+    {{item.id}}
+  </switch>
+  <button bindtap="switch">Switch</button>
+  <button bindtap="addToFront">Add to the front</button>
+
+  <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;">
+    {{item}}
+  </switch>
+  <button bindtap="addNumberToFront">Add to the front</button>
+
+
+
+
+
+https://www.cnblogs.com/kenshinobiy/p/7085826.html    入门教程
+
+
+
+
+1、设计稿用750*1334，切图按照设计稿的切，750px的设计搞宽度就是750rpx;
+2、导航栏不用自定义（window）
+标准高度是128rpx;只能改变字体颜色，跟导航栏颜色；一般不给吧导航栏样式；
+app.js window里面添加"navigationStyle":"custom"  可自定义导航栏，但是有兼容性；
+顶部胶囊不仍会显示，其他都没有，返回按钮也没有；
+具体设置掺着：https://blog.csdn.net/weixin_39872588/article/details/80500164
+
+3、标签栏爱素颜(tabBar)，标签栏高度是98rpx，不要加投影；
+标签栏设置:app.js  tabBar属性设置https://blog.csdn.net/lecepin/article/details/54380814
+
+"tabBar":{
+    "color":"black"	           //默认字体
+    "selectedColor":"#db1f01",    //选择字体
+    "list":[{
+      "pagePath":"pages/index/index", //跳转路径
+      "text":"课程",                  //字体内容
+      "iconPath":"image/icon-menu.png", //默认图标
+      "selectedIconPath":"image/icon-active-menu.png"  //选择图标
+    }]
+  },
+
+
+4、标签栏图表只要81rpx，大于小于都变形，只能放2-5个图标
+5、弹窗不覆盖导航跟标签，导航栏跟标签栏层级是最高的
+
+
+<template></template>:模板的使用
+定义template页面：head.wxml
+<template name="head">
+  <view wx:for="{{menuArr}}">{{item}}</view>
+</template>
+
+页面使用：
+引入template文件：<import sr="../common/head.wxml" />;
+页面使用：<template is="head" data="{{menuArr:页面变量}}"></template>
+
+
+全局变量的定义和使用
+1、定义全局变量：app.js里面设置globalData:{ menuArr:[栏目1，栏目2，栏目3]}
+2、js页面获取全局变量：
+var app=getApp();  
+定义data变量 menuArr=app.data.globaleData.menuArr;
+
+
+动态改变页面data值
+(1)获取data数据：this.data.数据名称
+(2)同步设置数据：
+this.setData({
+    data1:val, 
+    data2:val
+})
+
+
+
+button授权登录：https://developers.weixin.qq.com/miniprogram/dev/component/button.html
+文档：https://blog.csdn.net/woqianduo/article/details/81395257
+文档：https://blog.csdn.net/qq_41971087/article/details/82630612
+
+改变for循环的active项的样式
+原理：class="{{ clickId== index? 'active':'' }}"
+
+
+动态更新页面对全局变量的引用：
+引用页面设置：
+(1)获取全局变量
+data{
+   price:app.globalData.price
+}
+(2)动态更新全局变量,必须在所有引用页面设置，否则其他页面不会自动更新数据
+onShow:function(){
+   this.setData({
+	price:app.globalData.price
+   })
+}
+
+全局变量修改页面：
+只需直接赋值就行
+app.globalData.price="88元"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+微信小程序标签大全
+view：相当于div，视图容器
+scroll-view:滚动视图容器
+
